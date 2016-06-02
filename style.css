@@ -1,12 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,500italic,700,700italic);
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+img, object, video, iframe {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 header {
 /*  max-height: 10px;*/
 }
 
 main {
   margin-top: 120px;
-  max-width: 1000px;
+  max-width: 800px;
+  align-content: center;
   text-align: center;
   align-items: center;
 }
@@ -15,24 +33,28 @@ nav {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 1em;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   color: #5DA9AC;
   margin-top: 120px;
 }
 
-a {
+.mainnav {
   text-decoration: none;
   color: #5DA9AC;
   padding-left: 13px;
   padding-right: 13px;
 }
 
-a:hover {
+/*a:hover {
+  font-weight: bold;
+}*/
+
+.mainnav:hover {
   font-weight: bold;
 }
 
-a:active {
+.mainnav:active {
   border-style: solid;
   border-color: gray;
   border-width: thin;
@@ -41,16 +63,22 @@ a:active {
 
 .logo {
   width: 80px;
-  position: fixed;
+  position: absolute;
   left: 10px;
   top:10px;
 }
 
-.social-media {
-  position: fixed;
+.socialmedia {
+  position: absolute;
   top: 20px;
   right: 10px;
   margin-right: 10px;
+}
+
+.socialmedia:hover {
+  background-position: 0 -30px;
+  opacity: .5%;
+  color: grey;
 }
 
 .twitter {
@@ -68,6 +96,57 @@ a:active {
   width: 40px;
 }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+
 .photography {
   width: 100%;
+}
+
+.cover-photo {
+  width: 300px;
+  height: 300px;
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: left;
+}
+
+p {
+  font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.2em;
+}
+
+/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
+
+.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img {
+	width: 100%;
+	height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
 }
