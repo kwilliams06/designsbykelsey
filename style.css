@@ -24,12 +24,18 @@ header {
 main {
   margin-top: 120px;
   max-width: 800px;
-  align-content: center;
-  text-align: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 nav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: right;
+  margin-top: 120px;
+}
+
+a {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 1em;
@@ -57,12 +63,12 @@ nav {
 .mainnav:active {
   border-style: solid;
   border-color: gray;
-  border-width: thin;
+  border-width: 2px;
   padding: 10px auto;
 }
 
 .logo {
-  width: 80px;
+  width: 60px;
   position: absolute;
   left: 10px;
   top:10px;
@@ -133,6 +139,22 @@ p {
   text-align: left;
   line-height: 1.2em;
 }
+
+.projectContainer {
+  margin: 20px;
+  background-image: url(images/photo/cover-photo.jpg);
+  color: white;
+  text-align: center;
+  letter-spacing: .7px;
+  text-decoration: none;
+  float: left;
+  width: 33%;
+}
+
+.projectContainer:hover {
+  opacity: 70%;
+}
+
 
 /* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
 
