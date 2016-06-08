@@ -155,6 +155,15 @@ p {
   opacity: 70%;
 }
 
+.employee-list-wrapper .employee-filter-list li:after {
+  content: "|";
+  color: gray;
+}
+
+.employee-list-wrapper .employee-filter-list a {
+  text-decoration: none;
+}
+
 
 /* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
 
