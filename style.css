@@ -52,10 +52,6 @@ a {
   padding-right: 13px;
 }
 
-/*a:hover {
-  font-weight: bold;
-}*/
-
 .mainnav:hover {
   font-weight: bold;
 }
@@ -97,18 +93,20 @@ a {
 .grow:hover { transform: scale(1.3); }
 
 
-.mainnav a:active {
-  border-style: solid;
-  border-color: gray;
-  border-width: 2px;
+.mainnav:active a{
+  border: solid gray 2px;
   padding: 10px auto;
 }
 
 
-.cover-photo {
+.coverPhoto {
   width: 250px;
   height: 250px;
+  display: block;
+  float: left;
+  margin: 15px;
 }
+
 
 h1 {
   font-family: 'Raleway';
@@ -122,13 +120,13 @@ p {
   font-size: 1em;
   font-weight: 400;
   text-align: left;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 .projectContainer div {
   position: relative;
   float: left;
-  width: 250px;
+  width: 33.3%;
   height: 250px;
   padding: 10px;
 }
@@ -150,8 +148,22 @@ p {
   top: 50px;
 }
 
-.cover-photo:hover img{
+.caption {
+  display: inline-block;
+}
+
+.coverPhoto:hover img{
   opacity: .5;
+}
+
+.footer-copyright {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #ccc;
+  margin-top: 26px;
+  margin-bottom: -1em;
+  padding-bottom: 1.5em;
 }
 
 /* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
@@ -169,4 +181,35 @@ p {
 .carousel:after {
   content: 'flickity';
   display: none; /* hide :after */
+}
+
+/*about page*/
+
+.portrait {
+  padding-top: 30px;
+}
+
+.aboutME p{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  max-width: 600px;
+}
+
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: 'Raleway';
+  color: #1fa6b8;
+  font-size: 15px;
+  padding: 7px 20px 10px 20px;
+  border: solid #777d80 2px;
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+.btn:hover {
+  background: #d6d6d6;
+  text-decoration: none;
 }
