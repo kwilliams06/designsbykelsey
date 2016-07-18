@@ -23,6 +23,7 @@ header {
 
 main {
   margin-top: 120px;
+  padding-bottom: 50px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -43,6 +44,25 @@ a {
   text-decoration: none;
   color: #5DA9AC;
   margin-top: 120px;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Raleway',sans-serif;
+  padding-top: 2em;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+#lastline {
+  font-weight: 600;
+  font-style: italic;
 }
 
 .mainnav {
@@ -156,18 +176,19 @@ p {
   opacity: .5;
 }
 
-.footer-copyright {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #ccc;
-  margin-top: 26px;
-  margin-bottom: -1em;
-  padding-bottom: 1.5em;
+.footerCopyright {
+  position:absolute;
+  margin-bottom:0;
+  line-height: 1em;
+  /*padding-bottom: 10px;*/
+  width:100%;
+  height:10px;   /* Height of the footer */
+  background:none;
 }
 
-/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
 
+/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
+/*
 .carousel-cell {
 	width: 100%;
 }
@@ -177,16 +198,20 @@ p {
 	height: auto;
 }
 
-/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells
 .carousel:after {
   content: 'flickity';
-  display: none; /* hide :after */
+  display: none; /* hide :after
 }
 
 /*about page*/
-
+.carousel-cell {
+  padding-bottom: 20px;
+}
 .portrait {
   padding-top: 30px;
+  width: 70%;
+  margin: auto;
 }
 
 .aboutME p{
@@ -203,10 +228,14 @@ p {
   font-family: 'Raleway';
   color: #1fa6b8;
   font-size: 15px;
-  padding: 7px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   border: solid #777d80 2px;
   text-decoration: none;
-  margin-top: 100px;
+  margin: 100px 0px 100px 0px;
+}
+
+.button {
+  padding: 30px 0px;
 }
 
 .btn:hover {
