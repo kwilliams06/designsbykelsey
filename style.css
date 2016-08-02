@@ -35,9 +35,8 @@ nav {
   font-weight: normal;
   font-size: 1em;
   text-align: right;
-  margin-top: 120px;
+  margin-top: 80px;
 }
-
 
 a {
   font-family: 'Raleway', sans-serif;
@@ -144,14 +143,6 @@ p {
   width: 100%;
   display: block;
 }*/
-
-.projectContainer {
-  position: relative;
-  float: left;
-  width: 33%;
-  margin: 0px;
-  min-width: 40px;
-}
 
 .projectContainer span{
   font-size: 1em;
@@ -263,3 +254,51 @@ p {
 .photography {
   padding-bottom: 40px;
 }
+
+
+
+@media screen and (min-width: 400px) {
+
+.yearbookSpread img{
+  max-height: 80%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.brief {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projectContainer {
+  position: relative;
+  margin: 0px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+
+  .projectContainer {
+    position: relative;
+    float: left;
+    width: 33%;
+    margin: 0px;
+    min-width: 60px;
+  }
+
+@media screen and (min-width: 800px) {
+
+  .yearbookSpread img{
+    max-height: none;;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .brief {
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
