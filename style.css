@@ -82,7 +82,7 @@ h3 {
   padding-right: 13px;}
 
 .logo {
-  width: 60px;
+  min-width: 200px;
   position: absolute;
   left: 10px;
   top:10px;
