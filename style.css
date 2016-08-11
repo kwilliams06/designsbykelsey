@@ -16,15 +16,14 @@ img, object, video, iframe {
   display: inline-block;
   vertical-align: middle;
 }
-
-header {
-/*  max-height: 10px;*/
+body {
+  margin: auto;
 }
 
 main {
   margin-top: 150px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   max-width: 800px;
   margin: 0 auto;
 
@@ -34,8 +33,11 @@ nav {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 1em;
-  text-align: right;
+  text-align: center;
   margin-top: 80px;
+  background: gray;
+  width: 100%;
+  line-height: 3em;
 }
 
 a {
@@ -77,15 +79,18 @@ h3 {
 
 .mainnav {
   text-decoration: none;
-  color: #5DA9AC;
-  padding-left: 13px;
-  padding-right: 13px;}
+  color: white;
+  /*color: #5DA9AC;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: .3px;
+}
 
 .logo {
   min-width: 200px;
   position: absolute;
   left: 10px;
-  top:10px;
+  top: 10px;
 }
 
 .socialmedia {
@@ -94,7 +99,6 @@ h3 {
   right: 10px;
   margin-right: 10px;
 }
-
 
 .icon {
   float: right;
@@ -139,10 +143,10 @@ p {
   line-height: 1.5em;
 }
 
-/*.coverPhoto {
+.coverPhoto {
   width: 100%;
   display: block;
-}*/
+}
 
 .projectContainer span{
   font-size: 1em;
@@ -253,6 +257,11 @@ p {
 
 .photography {
   padding-bottom: 40px;
+  width: 80%;
+}
+
+.glassImage {
+  padding-top: 20px;
 }
 
 
