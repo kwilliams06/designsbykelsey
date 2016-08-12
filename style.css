@@ -23,7 +23,7 @@ body {
 main {
   margin-top: 150px;
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   max-width: 800px;
   margin: 0 auto;
 
@@ -35,7 +35,7 @@ nav {
   font-size: 1em;
   text-align: center;
   margin-top: 80px;
-  background: gray;
+  background: #D0D1D1;
   width: 100%;
   line-height: 3em;
 }
@@ -64,6 +64,12 @@ h3 {
   line-height: 1em;
 }
 
+#note {
+  font-size: .8em;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
 .shortDescription h3 {
   padding-bottom: 20px;
 }
@@ -79,8 +85,7 @@ h3 {
 
 .mainnav {
   text-decoration: none;
-  color: white;
-  /*color: #5DA9AC;*/
+  color: #5DA9AC;
   padding-left: 20px;
   padding-right: 20px;
   letter-spacing: .3px;
@@ -89,15 +94,14 @@ h3 {
 .logo {
   min-width: 200px;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 20px;
+  top: 20px;
 }
 
 .socialmedia {
   position: absolute;
   top: 20px;
-  right: 10px;
-  margin-right: 10px;
+  right: 20px;
 }
 
 .icon {
@@ -190,8 +194,8 @@ p {
 
 .footerCopyright {
   position:absolute;
-  margin-bottom:0px;
-  line-height: 1em;
+  margin-bottom:0;
+  line-height: 0;
   /*padding-bottom: 10px;*/
   width:100%;
   height:10px;   /* Height of the footer */
@@ -258,6 +262,7 @@ p {
 .photography {
   padding-bottom: 40px;
   width: 80%;
+  margin: 0 auto;
 }
 
 .glassImage {
@@ -265,8 +270,7 @@ p {
 }
 
 
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 320px) {
 
 .yearbookSpread img{
   max-height: 80%;
