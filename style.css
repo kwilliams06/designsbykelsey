@@ -269,6 +269,12 @@ p {
   padding-top: 20px;
 }
 
+.hinduImage {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 @media screen and (min-width: 320px) {
 
