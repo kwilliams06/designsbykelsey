@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Designs by Kelsey</title>
     <meta name="description" content="Designs by Kelsey">
+
+    <link rel="stylesheet" href="js/lightbox2/dist/css/lightbox.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
   </head>
   <body>
 
@@ -46,30 +49,66 @@
     <div class="shortDescription">
     <h3> A collection of black and white photography.</h3>
     </div>
-    <img src="images/photo/palmtree.jpg" alt="image 7" class="photography"></img>
-    <img src="images/photo/carlights.jpg" alt="image 7" class="photography"></img>
-    <img src="images/photo/1.png" alt="image 1" class="photography"></img>
-    <img src="images/photo/2.png" alt="image 2" class="photography"></img>
-    <img src="images/photo/4.png" alt="image 4" class="photography"></img>
-    <img src="images/photo/6.png" alt="image 6" class="photography"></img>
-    <img src="images/photo/7.png" alt="image 7" class="photography"></img>
-    <img src="images/photo/beach.jpg" alt="beach" class="photography"></img>
-    <p id="note"> The above photo was taken for an exposure time of about an hour at night.</p>
-    <img src="images/photo/hands.jpg" alt="hands all over" class="photography"></img>
-    <p id="note">The above photo was taken with a film camera, processed in the dark room with
-      several developing processes applied to get the distict style. Won several awards including the 2013 Governors Art Award.
 
+    <div class="clearfix photoList">
+      <a href="images/photo/palmtree.jpg"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/palmtree.jpg)"></a>
+
+      <a href="images/photo/carlights.jpg"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/carlights.jpg)"></a>
+
+      <a href="images/photo/1.png"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/1.png)"></a>
+
+      <a href="images/photo/2.png"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/2.png)"></a>
+
+      <a href="images/photo/4.png"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/4.png)"></a>
+
+      <a href="images/photo/6.png"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/6.png)"></a>
+
+      <a href="images/photo/7.png"
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/7.png)"></a>
+
+      <a href="images/photo/beach.jpg"
+        data-lightbox="main"
+        data-title="The above photo was taken for an exposure time of about an hour at night."
+        class="projectContainer blur"
+        style="background-image: url(images/photo/beach.jpg)"></a>
+
+      <a href="images/photo/hands.jpg"
+        data-title="The above photo was taken with a film camera, processed in the dark room with
+          several developing processes applied to get the distict style. Won several awards including the 2013 Governors Art Award."
+        data-lightbox="main"
+        class="projectContainer blur"
+        style="background-image: url(images/photo/hands.jpg)"></a>
+    </div>
 
     <div class="button">
     <a class="btn" href="index.html">home</a>
     </div>
-
   </main>
 
   <footer>
     <p class="footerCopyright"> &copy; Kelsey Williams 2016</p>
   </footer>
 
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
+  <script src="js/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
 </html>
