@@ -44,7 +44,8 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 1em;
-  text-align: right;
+  padding: 0 2px;
+  text-align: center;
   text-decoration: none;
   color: #5DA9AC;
   margin-top: 120px;
@@ -182,28 +183,6 @@ p {
   margin: 10px;
 }
 
-
-/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
-/*
-.carousel-cell {
-	width: 100%;
-}
-
-.carousel-cell img {
-	width: 100%;
-	height: auto;
-}
-
-/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells
-.carousel:after {
-  content: 'flickity';
-  display: none; /* hide :after
-}
-
-/*about page*/
-.carousel-cell {
-  padding-bottom: 20px;
-}
 .portrait {
   padding-top: 30px;
   width: 70%;
@@ -294,15 +273,16 @@ p {
     }
 
   .projectContainer span{
-    font-size: 1.6em;
-      font-style: bold;
-      color: #fff;
+      font-size: 1.2em;
+      font-family: 'Raleway';
+      font-weight: 500;
+      color: #5DA9AC;;
       position: absolute;
       width: 100%;
       text-align: center;
       bottom: -1.8em;
       display: block;
-      background: #000;
+      background: #D0D1D1;
       padding: 10px;
       box-sizing: border-box;
   }
@@ -381,6 +361,12 @@ p {
 
   .socialmedia .icon {
       float: right;
+  }
+
+  footer {
+    background-color: #D0D1D1;
+    height: 200px;
+    margin-top: 70px;
   }
 
 }
