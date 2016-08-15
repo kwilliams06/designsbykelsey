@@ -80,6 +80,14 @@ h3 {
   font-style: italic;
 }
 
+#resume {
+  margin-top: 50px;
+}
+
+#mainContact {
+  min-height: 1000px;
+}
+
 .icon {
   width: 40px;
   display: inline-block;
