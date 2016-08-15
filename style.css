@@ -234,6 +234,12 @@ p {
   margin: 0 auto;
 }
 
+.mulinoImage {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 @media screen and (min-width: 320px) {
   .yearbookSpread img{
@@ -363,11 +369,11 @@ p {
       float: right;
   }
 
-  footer {
+  /**footer {
     background-color: #D0D1D1;
     height: 200px;
     margin-top: 70px;
-  }
+  }**/
 
 }
 
